@@ -16,7 +16,7 @@ app.use('/', require('./Routes/MangaRoutes'))
 
 function Server() {
     try {
-        app.listen(port, () => console.log(`http://localhost:${port}`))
+        app.listen(port, () => console.log(`Server is up and running!!`))
         ConnectDB(url)
     } catch (error) {
         console.log(error)
